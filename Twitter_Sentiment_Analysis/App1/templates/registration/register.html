@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+
+<h1>Sign-Up</h1>
+<p> Register to get access to Sentiment Analysis Tool </p>
+<form class=""  method="post">
+  {{ user_form.as_p}}
+  {% csrf_token %}
+  <p><input type="submit" name="" value="Register Me"></p>
+</form>
+
+{% endblock %}

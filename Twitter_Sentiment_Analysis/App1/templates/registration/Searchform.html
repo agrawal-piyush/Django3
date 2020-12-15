@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title %} Search {% endblock %}
+
+{% block content %}
+<h1> Sentiment Analysis</h1>
+<p>
+Please Enter the following Credentials </p>
+<form class=""  method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="" value="Search">
+</form>
+
+{% endblock %}
